@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  body .black-overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 50%;
+    background: #1c1917; }
+  body .yellow-overlay {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    background-color: #ffb92a; }
+  body .app {
+    margin: 0 10px;
+    background-color: #1e293b;
+    padding: 20px;
+    width: 650px;
+    z-index: 1;
+    border-radius: 10px; }
+    body .app__search form {
+      display: flex;
+      gap: 10px;
+      width: 100%; }
+    body .app__search #search {
+      width: 70%;
+      border-radius: 10px;
+      padding: 10px;
+      outline: none;
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      font-size: 18px; }
+    body .app__search button {
+      color: #1e293b;
+      background-color: #ffb92a;
+      border: none;
+      width: 30%;
+      border-radius: 10px;
+      padding: 10px;
+      outline: none;
+      font-weight: 700;
+      font-size: 20px; }
+    body .app .card {
+      padding: 30px 0;
+      width: 100%;
+      color: white; }
+      body .app .card__top {
+        padding: 10px 0;
+        height: 300px;
+        width: 100%;
+        display: flex;
+        gap: 10px; }
+        body .app .card__top img {
+          width: 180px;
+          height: 250px; }
+      body .app .card__top-content {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; }
+        body .app .card__top-content .rating {
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin: 10px; }
+          body .app .card__top-content .rating img {
+            width: 24px;
+            height: 24px; }
+        body .app .card__top-content .details {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          color: #a0a0a0; }
+        body .app .card__top-content .genre {
+          margin-top: 20px;
+          display: flex;
+          width: 100%;
+          justify-content: space-around; }
+          body .app .card__top-content .genre div {
+            border-radius: 10px;
+            border: 1px solid #a0a0a0;
+            padding: 10px 20px; }
+      body .app .card h3 {
+        margin-top: 10px; }
+      body .app .card p {
+        color: #a0a0a0;
+        margin-top: 10px;
+        font-size: 1.2;
+        font-weight: 300;
+        line-height: 1.8em; }
