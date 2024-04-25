@@ -69,7 +69,7 @@ body {
 
       &__top {
         padding: 10px 0;
-        height: 300px;
+     
         width: 100%;
         display: flex;
         gap: 10px;
@@ -127,6 +127,9 @@ body {
     }
   }
 }
-// @media only screen and (max-width:570px) {
-    
-// }
+@media only screen and (max-width:570px) {
+ 
+    .card__top{display: flex;
+      flex-direction: column;align-items: center;
+    }
+}
