@@ -11,7 +11,7 @@ searchBtn.addEventListener("click", (e) => {
     let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${APIKey}`;
   
     if (movieName.length <= 0) {
-        row.innerHTML = ``;
+        row.innerHTML = "";
     } else {
       fetch(url)
         .then((resp) => resp.json())
